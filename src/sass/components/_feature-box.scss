@@ -61,3 +61,39 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 576px) {
+  .feature-box {
+    .icon {
+      i {
+        width: 40px;
+        height: 40px;
+      }
+
+      &::before {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    .content {
+      h5 {
+        font-size: 18px;
+        padding: 0 28px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
