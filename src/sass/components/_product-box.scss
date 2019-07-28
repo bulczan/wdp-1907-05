@@ -79,6 +79,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .price {
+      display: flex;
+
+      .old-price {
+        color: #a5a5a5;
+        font-size: 13px;
+        line-height: 24px;
+        padding: 5px 10px;
+        font-weight: 400;
+        text-decoration: line-through;
+      }
+    }
   }
   &:hover {
     .photo {
