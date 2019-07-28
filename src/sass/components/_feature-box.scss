@@ -39,17 +39,22 @@
     margin-top: -0.5rem;
     letter-spacing: 1px;
 
-    h5 {
-      font-weight: 600;
-      margin: 0;
-    }
+    a {
+      text-decoration: none;
+      h5 {
+        font-weight: 600;
+        margin: 0;
+        color: rgb(42, 42, 42);
+      }
 
-    p {
-      font-weight: 300;
+      p {
+        font-weight: 300;
+        color: rgb(42, 42, 42);
+      }
     }
   }
 
-  &.active {
+  &:hover {
     i {
       background-color: $primary;
       color: #ffffff;
@@ -57,7 +62,15 @@
     }
 
     .content {
-      color: $primary;
+      a {
+        h5 {
+          color: $primary;
+        }
+
+        p {
+          color: $primary;
+        }
+      }
     }
   }
 }
