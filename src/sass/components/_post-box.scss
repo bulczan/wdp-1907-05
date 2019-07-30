@@ -253,3 +253,11 @@
     }
   }
 }
+
+@for $i from 1 through 3 {
+  .col-xl-4:nth-child(#{$i}) {
+    .cover {
+      background-image: url("../images/blog/des_#{$i}.jpg");
+    }
+  }
+}
