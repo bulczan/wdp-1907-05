@@ -35,7 +35,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "lint-staged": "^8.1.0",
     "mustache": "^3.0.1",
-    "parcel-bundler": "^1.12.3",
+    "parcel-bundler": "^1.11.0",
     "posthtml-include": "^1.2.0",
     "prettier": "^1.15.3",
     "pretty-quick": "^1.8.0",
@@ -43,7 +43,7 @@
     "sass": "^1.15.3"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.3.1",
     "popper.js": "^1.14.6"
   }
 }

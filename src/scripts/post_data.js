@@ -27,3 +27,4 @@ var post = [
     comments: '4 Comments'
   }
 ];
+module.exports = post;

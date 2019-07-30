@@ -1,33 +1,36 @@
 (function(){
-const Mustache = require('../vendor/Mustache.min.js');
-const product = require('./product_data.js');
-const post = require('./post_data.js');
+    var Mustache = require('../vendor/Mustache.min.js');
+    var product = require('./product_data.js');
+    var post = require('./post_data.js');
 
-function loadPost () {
-var postTemplate = document.getElementById('post-box-column-template').innerHTML;
-Mustache.parse(postTemplate); // optional, speeds up future uses
-var rendered = '';
-for (var i = 0; i < post.length; i++) {
-    rendered += Mustache.render(postTemplate, post[i]);
-}
-document
-    .querySelector('.section--blog-posts .row-posts')
-    .insertAdjacentHTML('beforeend', rendered);
-}
+    console.log(product[1]);
+    console.log('hello');
+    console.log(post[1]);
 
-function loadProducts () {
-var productTemplate = document.getElementById('product-box-column-template')
-    .innerHTML;
-Mustache.parse(productTemplate); // optional, speeds up future uses
-var rendered = '';
-for (var i = 0; i < product.length; i++) {
-    rendered += Mustache.render(productTemplate, product[i]);
-}
-document
-    .querySelector('.section--products .row-products')
-    .insertAdjacentHTML('beforeend', rendered);
-}
+    function loadPost () {
+        var postTemplate = document.getElementById('post-box-column-template').innerHTML;
+        Mustache.parse(postTemplate);
+        var rendered = '';
+        for (var i = 0; i < post.length; i++) {
+            rendered += Mustache.render(postTemplate, post[i]);
+        }
+        document
+            .querySelector('.section--blog-posts .row-posts')
+            .insertAdjacentHTML('beforeend', rendered);
+    }
 
-loadPost();
-loadProducts();
+    function loadProducts () {
+        var productTemplate = document.getElementById('product-box-column-template').innerHTML;
+        Mustache.parse(productTemplate); 
+        var rendered = '';
+        for (var i = 0; i < product.length; i++) {
+            rendered += Mustache.render(productTemplate, product[i]);
+        }
+        document
+            .querySelector('.section--products .row-products')
+            .insertAdjacentHTML('beforeend', rendered);
+    }
+
+    loadPost();
+    loadProducts();
 })();
