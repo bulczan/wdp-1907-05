@@ -3,10 +3,6 @@
     var product = require('./product_data.js');
     var post = require('./post_data.js');
 
-    console.log(product[1]);
-    console.log('hello');
-    console.log(post[1]);
-
     function loadPost () {
         var postTemplate = document.getElementById('post-box-column-template').innerHTML;
         Mustache.parse(postTemplate);
