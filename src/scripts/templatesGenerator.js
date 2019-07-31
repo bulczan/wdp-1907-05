@@ -1,5 +1,5 @@
 (function(){
-    var Mustache = require('../vendor/Mustache.min.js');
+    var Mustache = require('mustache');
     var product = require('./product_data.js');
     var post = require('./post_data.js');
 
