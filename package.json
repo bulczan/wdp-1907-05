@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prewatch": "npm run clean",
-    "watch": "parcel src/index.html --open --port 8080",
+    "watch": "parcel src/index.html --open --no-autoinstall --port 8080",
     "prebuild": "npm run clean",
     "build": "parcel build src/index.html",
     "clean": "rimraf dist",
@@ -33,8 +33,8 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
+    "husky": "^1.3.1",
     "lint-staged": "^8.1.0",
-    "mustache": "^3.0.1",
     "parcel-bundler": "^1.11.0",
     "posthtml-include": "^1.2.0",
     "prettier": "^1.15.3",
