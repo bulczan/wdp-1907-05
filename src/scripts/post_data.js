@@ -1,7 +1,6 @@
 var post = [
   {
     id: 1,
-    image: '',
     public_data: '15 Jan 2016',
     title: 'Products That Fight Static',
     description:
@@ -10,7 +9,6 @@ var post = [
   },
   {
     id: 2,
-    image: '',
     public_data: '15 Jan 2016',
     title: 'Products That Fight Static',
     description:
@@ -19,7 +17,6 @@ var post = [
   },
   {
     id: 3,
-    image: '',
     public_data: '15 Jan 2016',
     title: 'Products That Fight Static',
     description:

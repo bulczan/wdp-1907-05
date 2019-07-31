@@ -1,54 +1,263 @@
-.post-box {
-  margin-bottom: 2rem;
+@media (min-width: 1200px) {
+  .post-box {
+    margin-bottom: 2rem;
 
-  .cover {
-    padding: 70% 25px 0 25px;
-    background: {
-      color: #f4f5f7;
-      size: cover;
-      position: center;
+    a {
+      color: $text-color;
+
+      .cover {
+        padding: 70% 25px 0 25px;
+        background: {
+          color: #f4f5f7;
+          size: cover;
+          position: center;
+        }
+
+        .details {
+          padding: 15px 20px;
+          display: flex;
+          background-color: #ffffff;
+          font-size: 14px;
+
+          & > * {
+            flex: 1 1 auto;
+          }
+
+          .date {
+            text-align: left;
+          }
+
+          .comments {
+            text-align: right;
+          }
+        }
+      }
+
+      .post-info {
+        padding: 25px;
+
+        h5 {
+          color: $text-color;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 1px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 24px;
+          color: rgb(103, 103, 103);
+          text-align: justify;
+        }
+
+        .more {
+          text-align: center;
+          padding-top: 30px;
+
+          .btn-main {
+            display: inline-block;
+          }
+        }
+      }
     }
 
-    .details {
-      padding: 15px 20px;
-      display: flex;
-      background-color: #ffffff;
-      font-size: 14px;
+    &:hover {
+      a {
+        text-decoration: none;
 
-      & > * {
-        flex: 1 1 auto;
-      }
+        .more {
+          padding-top: 30px;
+          text-align: center;
 
-      .date {
-        text-align: left;
-      }
+          .btn-main {
+            background-color: $primary;
+          }
+        }
 
-      .comments {
-        text-align: right;
+        h5 {
+          font-size: 16px;
+          line-height: 24px;
+          color: $primary;
+          letter-spacing: 1px;
+        }
       }
     }
   }
+}
 
-  .post-info {
-    padding: 25px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .post-box {
+    margin-bottom: 2rem;
 
-    h5 {
-      color: $primary;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: 1px;
+    a {
+      color: $text-color;
+
+      .cover {
+        padding: 70% 25px 0 25px;
+        background: {
+          color: #f4f5f7;
+          size: cover;
+          position: center;
+        }
+
+        .details {
+          padding: 15px 20px;
+          display: flex;
+          background-color: #ffffff;
+          font-size: 14px;
+
+          & > * {
+            flex: 1 1 auto;
+          }
+
+          .date {
+            text-align: left;
+          }
+
+          .comments {
+            text-align: right;
+          }
+        }
+      }
+
+      .post-info {
+        padding: 25px;
+
+        h5 {
+          color: $text-color;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 1px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 24px;
+          color: rgb(103, 103, 103);
+          text-align: justify;
+        }
+
+        .more {
+          text-align: center;
+          padding-top: 30px;
+
+          .btn-main {
+            display: inline-block;
+          }
+        }
+      }
     }
 
-    p {
-      font-size: 14px;
-      line-height: 24px;
-      color: rgb(103, 103, 103);
-      text-align: justify;
+    &:hover {
+      a {
+        text-decoration: none;
+
+        .more {
+          padding-top: 30px;
+          text-align: center;
+
+          .btn-main {
+            background-color: $primary;
+          }
+        }
+
+        .post-info {
+          h5 {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .post-box {
+    margin-bottom: 2rem;
+
+    a {
+      color: $text-color;
+
+      .cover {
+        padding: 70% 25px 0 25px;
+        background: {
+          color: #f4f5f7;
+          size: cover;
+          position: center;
+        }
+
+        .details {
+          padding: 15px 20px;
+          display: flex;
+          background-color: #ffffff;
+          font-size: 14px;
+
+          & > * {
+            flex: 1 1 auto;
+          }
+
+          .date {
+            text-align: left;
+          }
+
+          .comments {
+            text-align: right;
+          }
+        }
+      }
+
+      .post-info {
+        padding: 25px;
+
+        h5 {
+          color: $text-color;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 1px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 24px;
+          color: rgb(103, 103, 103);
+          text-align: justify;
+        }
+
+        .more {
+          text-align: center;
+          padding-top: 30px;
+          .btn-main {
+            display: inline-block;
+          }
+        }
+      }
     }
 
-    .more {
-      text-align: center;
-      padding-top: 30px;
+    &:hover {
+      a {
+        text-decoration: none;
+        .more {
+          text-align: center;
+          padding-top: 30px;
+          .btn-main {
+            background-color: $primary;
+          }
+        }
+
+        .post-info {
+          h5 {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@for $i from 1 through 3 {
+  .col-xl-4:nth-child(#{$i}) {
+    .cover {
+      background-image: url("../images/blog/des_#{$i}.jpg");
     }
   }
 }

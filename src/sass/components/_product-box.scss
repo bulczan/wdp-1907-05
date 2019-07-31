@@ -29,6 +29,7 @@
     .buttons {
       display: flex;
       justify-content: space-between;
+      visibility: hidden;
     }
   }
 
@@ -78,5 +79,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .price {
+      display: flex;
+
+      .old-price {
+        color: #a5a5a5;
+        font-size: 13px;
+        line-height: 24px;
+        padding: 5px 10px;
+        font-weight: 400;
+        text-decoration: line-through;
+      }
+    }
+  }
+  &:hover {
+    .photo {
+      .buttons {
+        visibility: visible;
+      }
+    }
+
+    .actions {
+      .price {
+        .btn-main-small {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@for $i from 1 through 8 {
+  .col-xl-3:nth-child(#{$i}) {
+    .photo {
+      background-image: url("../images/pictures/ch_#{$i}.jpg");
+    }
   }
 }
