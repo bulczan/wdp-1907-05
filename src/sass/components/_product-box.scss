@@ -111,7 +111,7 @@
 }
 
 @for $i from 1 through 8 {
-  .col-3:nth-child(#{$i}) {
+  .col-xl-3:nth-child(#{$i}) {
     .photo {
       background-image: url("../images/pictures/ch_#{$i}.jpg");
     }
