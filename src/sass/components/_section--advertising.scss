@@ -1,5 +1,5 @@
-.section--features {
-  padding: 5rem 0;
+.section--advertising {
+  padding: 0 0 5rem 0;
 }
 
 @media (min-width: 1200px) {
@@ -12,8 +12,4 @@
 }
 
 @media (max-width: 576px) {
-  .col-xs-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
 }

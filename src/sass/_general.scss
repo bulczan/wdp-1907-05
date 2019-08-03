@@ -1,0 +1,11 @@
+body {
+  font-family: "Poppins", sans-serif;
+
+  i:not(.fa-shopping-basket),
+  .icon,
+  [class^="icon-"],
+  [class$="-icon"],
+  a {
+    @extend %hoveranime;
+  }
+}
