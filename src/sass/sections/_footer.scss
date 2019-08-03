@@ -26,23 +26,6 @@ footer {
           }
         }
       }
-
-      @media (max-width: 575px) {
-        text-align: center;
-      }
-    }
-
-    .payment-methods {
-      @media (min-width: 992px) and (max-width: 1010px) {
-        margin-left: -25px;
-      }
-      @media (min-width: 768px) and (max-width: 890px) {
-        margin-left: -60px;
-      }
-      @media (max-width: 575px) {
-        display: block;
-        margin: 0 auto;
-      }
     }
   }
 
@@ -81,10 +64,6 @@ footer {
             }
           }
         }
-      }
-
-      @media (max-width: 575px) {
-        text-align: center !important;
       }
     }
   }
