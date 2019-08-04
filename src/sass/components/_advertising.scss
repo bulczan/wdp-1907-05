@@ -11,26 +11,6 @@
       line-height: 36px;
       color: #fff;
     }
-    @media (max-width: 576px) {
-      height: 320px;
-      padding: 20px;
-      .advertising__overlay {
-        height: 280px;
-      }
-      .advertising__item-name {
-        font-size: 26px;
-        line-height: 26px;
-      }
-      .advertising__item-name--large {
-        font-size: 40px;
-        line-height: 40px;
-      }
-      .advertising__discount {
-        font-size: 30px;
-        line-height: 30px;
-        padding: 10px 6px 9px 7px;
-      }
-    }
   }
   &__quarter {
     display: flex;
@@ -67,40 +47,6 @@
         line-height: 24px;
         margin-bottom: 5px;
         display: inline-block;
-      }
-    }
-    @media (max-width: 992px) {
-      &:nth-child(1) {
-        margin-top: 30px;
-      }
-    }
-    @media (max-width: 576px) {
-      height: 148px;
-      &:nth-child(1) {
-        margin: 20px 0;
-        .advertising__item-name {
-          font-size: 20px;
-          line-height: 20px;
-        }
-        .advertising__item-name--small {
-          font-size: 14px;
-          line-height: 14px;
-        }
-        .advertising__item-name--color-primary {
-          font-size: 24px;
-          line-height: 24px;
-        }
-      }
-      &:nth-child(2) {
-        padding-right: 0px;
-        .advertising__item-name {
-          font-size: 14px;
-          line-height: 14px;
-        }
-        .advertising__item-name--color-primary {
-          font-size: 19px;
-          line-height: 19px;
-        }
       }
     }
   }
