@@ -42,49 +42,6 @@ header {
         margin-right: 5px;
       }
     }
-
-    @media (max-width: 575px) {
-      .col-xs-4 {
-        flex: 0 0 33.3333333333%;
-        max-width: 33.3333333333%;
-      }
-
-      .col-xs-8 {
-        flex: 0 0 66.6666666667%;
-        max-width: 66.6666666667%;
-      }
-
-      .text-left ul {
-        li {
-          margin-right: 10px;
-
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-      }
-
-      .text-right {
-        display: flex;
-        justify-content: flex-end;
-
-        ul {
-          width: 79px;
-
-          li {
-            margin-left: 10px;
-
-            &:first-child {
-              margin-left: 0;
-            }
-
-            a span {
-              display: none;
-            }
-          }
-        }
-      }
-    }
   }
 
   .company-claim {
@@ -160,53 +117,6 @@ header {
           .cart-icon {
             background-color: lighten($primary, 10%);
           }
-        }
-      }
-    }
-
-    @media (min-width: 576px) and (max-width: 767px) {
-      .phone-number {
-        p {
-          font-size: 14px;
-        }
-      }
-
-      .text-center {
-        padding: 0 10px;
-      }
-    }
-
-    @media (max-width: 575px) {
-      .row {
-        position: relative;
-
-        .phone-number {
-          text-align: right !important;
-          position: absolute;
-          right: 0;
-          top: 104px;
-          order: 2;
-
-          p {
-            font-size: 14px;
-
-            i {
-              margin-right: 2px;
-            }
-          }
-        }
-        .text-center {
-          position: relative;
-          top: -25px;
-          order: 1;
-        }
-        .cart {
-          position: relative;
-          padding-left: 15px;
-          flex-grow: 0;
-          top: -16px;
-          right: -29px;
-          order: 3;
         }
       }
     }
