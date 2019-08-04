@@ -1,4 +1,6 @@
 @import "variables";
+@import "../vendor/normalize.css";
+@import "mixinsPlaceholders";
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
@@ -7,18 +9,20 @@
 @import "fontawesome/solid";
 @import "fontawesome/brands";
 @import "fontawesome/regular";
+@import "general";
 
-@import "components/header";
-@import "components/footer";
+@import "sections/header";
+@import "sections/footer";
 
 @import "components/button";
+
 @import "components/feature-box";
 @import "components/panel-bar";
 @import "components/post-box";
 @import "components/product-box";
+@import "components/_advertising";
 
 @import "components/section--features";
+@import "components/_section--advertising";
 
-body {
-  font-family: "Poppins", sans-serif;
-}
+@import "media_queries";
