@@ -1,7 +1,50 @@
-.section--products .row-products{
-    opacity: 0;
-    min-height: 60vh;
-    overflow-y: hidden;
-    flex-wrap: nowrap;
-    
+.product-container{
+    position: relative;
+   
+    div.previous, div.next{
+        position: absolute;
+        display: inline-flex;
+        height: 92%;
+        width: 15vh;
+        z-index: 1;
+        i{
+            width: 100%;
+            display: none;
+            font-size: 4rem;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            opacity: 0.4;
+            &::before{
+                color: black;
+            }
+            
+        }
+    }
+    div.previous{
+        left: -15vh;
+        i{
+            background-image: linear-gradient(to left, rgba(250,0,0,0) , black);
+        }
+    }
+
+    div.next{
+        right: -15vh;
+        i{
+            background-image: linear-gradient(to right, rgba(250,0,0,0) , black);
+        }
+    }
+    &:hover {
+        div.previous:hover, div.next:hover{
+            i{
+                display: inline-flex;
+            }
+        }
+    }
+    .row-products{
+        opacity: 0;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        }
+
 }
