@@ -1,5 +1,6 @@
 const Mustache = require('mustache');
 const post = require('./post_data.js');
+console.log(post);
 
 (function loadPost() {
     const postTemplate = document.getElementById('post-box-column-template').innerHTML;
@@ -26,5 +27,4 @@ function loadProducts(productList) {
         .querySelector('.section--products .row-products')
         .insertAdjacentHTML('beforeend', rendered);
 }
-
 module.exports = loadProducts;
