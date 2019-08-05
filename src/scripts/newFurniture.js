@@ -1,5 +1,6 @@
 const product = require('./product_data.js');
-const productGenerator = require('./templatesGenerator.js')
+const productGenerator = require('./templatesGenerator.js');
+const Swipe = require('./swiper.js')
 
 let tabs = document.querySelectorAll('.section--products .col.menu ul a');
 let activeTab = document.querySelector('.section--products .col.menu ul a.active');
@@ -67,14 +68,36 @@ next.addEventListener('click', () => {
     }
 });
 
+// Swiper Section
+let swiper = new Swipe('.section--products .row-products');
 
+swiper.onLeft(function() {
+    if(activeDotIndex > 0){
+        rowproducts.scrollBy(-rowproducts.clientWidth, 0);
+        activeDotIndex--;
+        deltaActiveIndex = activeDotIndex;
+        setActiveDot(activeDotIndex);
+    }
+});
+swiper.onRight(function() {
+    if(activeDotIndex < dots.length - 1){
+        rowproducts.scrollBy(rowproducts.clientWidth, 0);
+        activeDotIndex ++;
+        deltaActiveIndex = activeDotIndex;
+        setActiveDot(activeDotIndex);
+    }
+});
+swiper.run();
 
-function setActiveDot(activeDotIndex){
-    dots.forEach((elem) => {
-        elem.classList.remove('active');
-    });
-    dots[activeDotIndex].classList.add('active');
-};
+function dotsSetter() {
+    for(let i = 3; i >= 0; i--){ // Return inteneger of products witch will be visiable dependent devices' width.
+        queryTable[i].addListener( () =>{
+            dotshtml = '';
+            dotsCreator(i);
+        });
+        dotsCreator(i);
+    }
+}
 
 function dotsCreator(i){ 
     if(queryTable[i].matches){
@@ -99,15 +122,12 @@ function dotsCreator(i){
     }
 }
 
-function dotsSetter() {
-    for(let i = 3; i >= 0; i--){ // Return inteneger of products witch will be visiable dependent devices' width.
-        queryTable[i].addListener( () =>{
-            dotshtml = '';
-            dotsCreator(i);
-        });
-        dotsCreator(i);
-    }
-}
+function setActiveDot(activeDotIndex){
+    dots.forEach((elem) => {
+        elem.classList.remove('active');
+    });
+    dots[activeDotIndex].classList.add('active');
+};
 
 function productSearcher() {
     for (var i = 0; i < product.length; i++) {
