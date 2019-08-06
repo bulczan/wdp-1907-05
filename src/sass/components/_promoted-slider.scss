@@ -1,0 +1,76 @@
+.jumbotron {
+  height: 95%;
+  margin: 0;
+  background-image: url("../images/coach.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  .container {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    .promoted-jumbo-slogan {
+      width: 100%;
+      padding: 60px 0;
+      color: #fff;
+      background-color: rgba(49, 51, 50, 0.5);
+      text-transform: uppercase;
+
+      p,
+      h3 {
+        margin: 0;
+      }
+
+      h3 {
+        font-size: 42px;
+        line-height: 0.9;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .btn {
+      position: relative;
+      bottom: 20px;
+      padding: 12px 24px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      background-color: #ffffff;
+      border: none;
+
+      &:hover {
+        color: #212529;
+      }
+    }
+  }
+}
+
+.container-arrow {
+  height: 5%;
+
+  .arrow-row {
+    height: 100%;
+    background-color: #000;
+
+    .col-6 {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}
