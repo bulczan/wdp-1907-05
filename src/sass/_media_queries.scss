@@ -53,6 +53,25 @@
       }
     }
   }
+
+  footer {
+    .footer-menu {
+      .menu-wrapper {
+        text-align: center;
+      }
+
+      .payment-methods {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .bottom-bar {
+      .socialmedia {
+        text-align: center !important;
+      }
+    }
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -87,4 +106,26 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+}
+
+// Custom footer breakpoint
+@media (min-width: 992px) and (max-width: 1010px) {
+  footer {
+    .footer-menu {
+      .payment-methods {
+        margin-left: -25px;
+      }
+    }
+  }
+}
+
+// Custom footer breakpoint
+@media (min-width: 768px) and (max-width: 890px) {
+  footer {
+    .footer-menu {
+      .payment-methods {
+        margin-left: -60px;
+      }
+    }
+  }
 }
