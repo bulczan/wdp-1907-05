@@ -1,4 +1,4 @@
-var product = [
+let product = [
   {
     id: 1,
     type: "chair",

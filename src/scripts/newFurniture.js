@@ -2,7 +2,7 @@ const product = require('./product_data.js');
 const productGenerator = require('./templatesGenerator.js');
 const Swipe = require('./swiper.js')
 
-let tabs = document.querySelectorAll('.section--products .col.menu ul a');
+const tabs = document.querySelectorAll('.section--products .col.menu ul a');
 let activeTab = document.querySelector('.section--products .col.menu ul a.active');
 const rowproducts = document.querySelector('.section--products .row-products');
 let dots;
@@ -154,15 +154,10 @@ function reset() {
     dotsul.innerHTML = '';
     dotshtml = '';
 }
-
 function fadeAnimation(){
-    let opa = 0.01;
-     setInterval(() =>{
-        if(opa >= 1){
-        clearInterval();
-        } else {
-        opa += opa * 0.1;
-        rowproducts.style.opacity = opa;
-        }
-    }, 10);
+    rowproducts.classList.remove('afterfade');
+        setTimeout( ()=>{
+            rowproducts.classList.add('afterfade');
+        },100);
 };
+

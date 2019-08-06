@@ -45,5 +45,10 @@
         opacity: 0;
         overflow: hidden;
         flex-wrap: nowrap;
+        transition: opacity 0s linear;
+        &.afterfade{
+            opacity: 1;
+            transition: opacity 1s ease-in;
+        }
     }
 }
