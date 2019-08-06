@@ -13,16 +13,20 @@
 
 @import "sections/header";
 @import "sections/footer";
+@import "sections/newFurniture";
 
 @import "components/button";
 
 @import "components/feature-box";
+@import "components/promoted-box";
+@import "components/promoted-slider";
 @import "components/panel-bar";
 @import "components/post-box";
 @import "components/product-box";
 @import "components/_advertising";
 
 @import "components/section--features";
+@import "components/section--promoted";
 @import "components/_section--advertising";
 
 @import "media_queries";

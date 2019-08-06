@@ -1,7 +1,7 @@
-var product = [
+let product = [
   {
     id: 1,
-    type: '',
+    type: 'chair',
     name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
@@ -12,7 +12,7 @@ var product = [
   },
   {
     id: 2,
-    type: '',
+    type: 'chair',
     name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
@@ -23,7 +23,7 @@ var product = [
   },
   {
     id: 3,
-    type: '',
+    type: 'chair',
     name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
@@ -34,7 +34,7 @@ var product = [
   },
   {
     id: 4,
-    type: '',
+    type: 'chair',
     name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
@@ -45,7 +45,7 @@ var product = [
   },
   {
     id: 5,
-    type: '',
+    type: 'chair',
     name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
@@ -56,7 +56,7 @@ var product = [
   },
   {
     id: 6,
-    type: '',
+    type: 'chair',
     name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
@@ -67,7 +67,7 @@ var product = [
   },
   {
     id: 7,
-    type: '',
+    type: 'chair',
     name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
@@ -78,7 +78,7 @@ var product = [
   },
   {
     id: 8,
-    type: '',
+    type: 'chair',
     name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
