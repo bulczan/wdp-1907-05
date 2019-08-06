@@ -1,7 +1,7 @@
 const product = require('./product_data.js');
 const productGenerator = require('./templatesGenerator.js')
 
-let tabs = document.querySelectorAll('.section--products .col.menu ul a');
+const tabs = document.querySelectorAll('.section--products .col.menu ul a');
 let active = document.querySelector('.section--products .col.menu ul a.active');
 const rowproducts = document.querySelector('.section--products .row-products');
 
@@ -19,39 +19,33 @@ tabs.forEach((elem) => { // Added Event for every tab
         productToShow = [];
         rowproducts.innerHTML = "";
         fadeAnimation();
+
         if(event.target !== active){ // Remove .active class for every tab
             tabs.forEach( (elem) => {
                 elem.classList.remove('active');
             });
             event.target.classList.add('active'); // Add .active class for focus tab
             active = document.querySelector('.section--products .col.menu ul a.active');
-
             productFiller();
             productGenerator(productToShow);
         }
     });
 });
 
-
-
-function fadeAnimation(){
-    let opa = 0.01;
-     setInterval(() =>{
-        if(opa >= 1){
-        clearInterval();
-        } else{
-        opa += opa * 0.1;
-        rowproducts.style.opacity = opa;
-        }
-    }, 10);
-};
-
 function productFiller(){
-    for (var i = 0; i < product.length; i++) {
+
+    for (let i = 0; i < product.length; i++) {
         if (active.innerHTML.toString().toLowerCase() === product[i].type) {
             productToShow.push(product[i]);
         }                     
     };
+}
+
+function fadeAnimation(){
+    rowproducts.classList.remove('afterfade');
+        setTimeout( ()=>{
+            rowproducts.classList.add('afterfade');
+        },100);
 }
 
 
