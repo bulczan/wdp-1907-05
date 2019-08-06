@@ -36,8 +36,16 @@ document.addEventListener('DOMContentLoaded', () => { // Event for start content
 
 tabs.forEach((elem) => { // Added Event  which created content/product-box for every category tab
     elem.addEventListener('click', (event) => {
+<<<<<<< HEAD
         event.preventDefault();
         if(event.target !== activeTab){ // Remove .active class for every tab
+=======
+        productToShow = [];
+        rowproducts.innerHTML = "";
+        fadeAnimation();
+
+        if(event.target !== active){ // Remove .active class for every tab
+>>>>>>> 33f84d73d5d19a0bfb1d8b339084b2b4362abd52
             tabs.forEach( (elem) => {
                 elem.classList.remove('active');
             });
