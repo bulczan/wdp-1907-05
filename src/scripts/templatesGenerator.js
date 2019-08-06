@@ -1,33 +1,30 @@
-(function () {
-  var Mustache = require('mustache');
-  var product = require('./product_data.js');
-  var post = require('./post_data.js');
+const Mustache = require('mustache');
+const post = require('./post_data.js');
+console.log(post);
 
-  function loadPost () {
-    var postTemplate = document.getElementById('post-box-column-template').innerHTML;
+(function loadPost() {
+    const postTemplate = document.getElementById('post-box-column-template').innerHTML;
     Mustache.parse(postTemplate);
-    var rendered = '';
-    for (var i = 0; i < post.length; i++) {
-      rendered += Mustache.render(postTemplate, post[i]);
+    let rendered = '';
+    for (let i = 0; i < post.length; i++) {
+        rendered += Mustache.render(postTemplate, post[i]);
+        
     }
     document
-      .querySelector('.section--blog-posts .row-posts')
-      .insertAdjacentHTML('beforeend', rendered);
-  }
-
-  function loadProducts () {
-    var productTemplate = document.getElementById('product-box-column-template')
-      .innerHTML;
-    Mustache.parse(productTemplate);
-    var rendered = '';
-    for (var i = 0; i < product.length; i++) {
-      rendered += Mustache.render(productTemplate, product[i]);
-    }
-    document
-      .querySelector('.section--products .row-products')
-      .insertAdjacentHTML('beforeend', rendered);
-  }
-
-  loadPost();
-  loadProducts();
+        .querySelector('.section--blog-posts .row-posts')
+        .insertAdjacentHTML('beforeend', rendered);
 })();
+
+function loadProducts(productList) {
+
+    const productTemplate = document.getElementById('product-box-column-template').innerHTML;
+    Mustache.parse(productTemplate); 
+    let rendered = '';
+    for (let i = 0; i < productList.length; i++) {
+        rendered += Mustache.render(productTemplate, productList[i]);
+    }
+    document
+        .querySelector('.section--products .row-products')
+        .insertAdjacentHTML('beforeend', rendered);
+}
+module.exports = loadProducts;

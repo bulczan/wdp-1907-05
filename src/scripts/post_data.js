@@ -1,4 +1,4 @@
-var post = [
+let post = [
   {
     id: 1,
     public_data: '15 Jan 2016',
