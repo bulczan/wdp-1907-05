@@ -1,1 +1,3 @@
-console.log('hello');
+import toggleMainMenu from './header.js';
+
+toggleMainMenu();
