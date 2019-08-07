@@ -1,8 +1,8 @@
 let product = [
   {
     id: 1,
-    type: "chair",
-    name: "Aenean Ru Bristique",
+    type: 'chair',
+    name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
     price: '$30.00',
@@ -12,8 +12,8 @@ let product = [
   },
   {
     id: 2,
-    type: "chair",
-    name: "Aenean Ru Bristique",
+    type: 'chair',
+    name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
     price: '$15.00',
@@ -23,8 +23,8 @@ let product = [
   },
   {
     id: 3,
-    type: "chair",
-    name: "Aenean Ru Bristique",
+    type: 'chair',
+    name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
     price: '$25.00',
@@ -34,8 +34,8 @@ let product = [
   },
   {
     id: 4,
-    type: "chair",
-    name: "Aenean Ru Bristique",
+    type: 'chair',
+    name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
     price: '$15.00',
@@ -45,8 +45,8 @@ let product = [
   },
   {
     id: 5,
-    type: "chair",
-    name: "Aenean Ru Bristique",
+    type: 'chair',
+    name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
     price: '$15.00',
@@ -56,8 +56,8 @@ let product = [
   },
   {
     id: 6,
-    type: "chair",
-    name: "Aenean Ru Bristique",
+    type: 'chair',
+    name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
     price: '$15.00',
@@ -67,8 +67,8 @@ let product = [
   },
   {
     id: 7,
-    type: "chair",
-    name: "Aenean Ru Bristique",
+    type: 'chair',
+    name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
     price: '$25.00',
@@ -78,8 +78,8 @@ let product = [
   },
   {
     id: 8,
-    type: "chair",
-    name: "Aenean Ru Bristique",
+    type: 'chair',
+    name: 'Aenean Ru Bristique',
     stars: 2,
     user_stars: undefined,
     price: '$15.00',

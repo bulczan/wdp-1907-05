@@ -18,6 +18,7 @@ let activeDotIndex = 1;
 let deltaActiveIndex = 0;
 let dotshtml = '';
 
+<<<<<<< HEAD
 const queryTable = [
     mq('(min-width: 1200px)'),
     mq('(max-width: 1199.98px) and (min-width: 992px)'),
@@ -161,3 +162,47 @@ function fadeAnimation(){
         },100);
 };
 
+=======
+document.addEventListener('DOMContentLoaded', () => {
+  // Added Event for start content
+  rowproducts.innerHTML = '';
+  fadeAnimation();
+  productFiller();
+  productGenerator(productToShow);
+});
+
+tabs.forEach(elem => {
+  // Added Event for every tab
+  elem.addEventListener('click', event => {
+    productToShow = [];
+    rowproducts.innerHTML = '';
+    fadeAnimation();
+
+    if (event.target !== active) {
+      // Remove .active class for every tab
+      tabs.forEach(elem => {
+        elem.classList.remove('active');
+      });
+      event.target.classList.add('active'); // Add .active class for focus tab
+      active = document.querySelector('.section--products .col.menu ul a.active');
+      productFiller();
+      productGenerator(productToShow);
+    }
+  });
+});
+
+function productFiller () {
+  for (let i = 0; i < product.length; i++) {
+    if (active.innerHTML.toString().toLowerCase() === product[i].type) {
+      productToShow.push(product[i]);
+    }
+  }
+}
+
+function fadeAnimation () {
+  rowproducts.classList.remove('afterfade');
+  setTimeout(() => {
+    rowproducts.classList.add('afterfade');
+  }, 100);
+}
+>>>>>>> d53c6ff5a691d5f06f6ec684baf36477d8e27fbd
