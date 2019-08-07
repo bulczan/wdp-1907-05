@@ -1,0 +1,45 @@
+.section--brands {
+  border-top: 2px solid lightslategray;
+  border-bottom: 2px solid lightslategray;
+
+  .brands-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .btn-main-brands-switch {
+      color: white;
+      background-color: $footer-claim-bg;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 70px;
+      padding: 10px 15px;
+      margin: 20px auto;
+      height: 90px;
+      text-align: center;
+
+      &:not(.no-hover):hover {
+        color: white !important;
+        background-color: $primary;
+        text-decoration: none;
+      }
+    }
+
+    .logo-container {
+      margin: 20px auto;
+      width: 140px;
+      height: 90px;
+      text-align: center;
+      line-height: 83px;
+      border: 2px solid lightslategray;
+      flex: 0 1 auto;
+
+      img {
+        padding: 10px;
+      }
+    }
+  }
+}
