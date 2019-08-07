@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .product-container{
     position: relative;
    
@@ -52,13 +51,4 @@
             transition: opacity 1s ease-in;
         }
     }
-=======
-.section--products .row-products {
-  opacity: 0;
-  transition: opacity 0s linear;
-  &.afterfade {
-    opacity: 1;
-    transition: opacity 1s ease-in;
-  }
->>>>>>> d53c6ff5a691d5f06f6ec684baf36477d8e27fbd
 }
