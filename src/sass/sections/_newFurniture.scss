@@ -51,4 +51,12 @@
             transition: opacity 1s ease-in;
         }
     }
+
+.section--products .row-products {
+  opacity: 0;
+  transition: opacity 0s linear;
+  &.afterfade {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+  }
 }

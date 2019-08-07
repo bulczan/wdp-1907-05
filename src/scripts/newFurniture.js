@@ -161,3 +161,38 @@ function fadeAnimation(){
         },100);
 };
 
+document.addEventListener('DOMContentLoaded', () => {
+  // Added Event for start content
+  rowproducts.innerHTML = '';
+  fadeAnimation();
+  productFiller();
+  productGenerator(productToShow);
+});
+
+tabs.forEach(elem => {
+  // Added Event for every tab
+  elem.addEventListener('click', event => {
+    productToShow = [];
+    rowproducts.innerHTML = '';
+    fadeAnimation();
+
+    if (event.target !== active) {
+      // Remove .active class for every tab
+      tabs.forEach(elem => {
+        elem.classList.remove('active');
+      });
+      event.target.classList.add('active'); // Add .active class for focus tab
+      active = document.querySelector('.section--products .col.menu ul a.active');
+      productFiller();
+      productGenerator(productToShow);
+    }
+  });
+});
+
+function productFiller () {
+  for (let i = 0; i < product.length; i++) {
+    if (active.innerHTML.toString().toLowerCase() === product[i].type) {
+      productToShow.push(product[i]);
+    }
+  }
+}
