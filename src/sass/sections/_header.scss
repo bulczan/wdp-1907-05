@@ -2,6 +2,10 @@ header {
   .top-bar {
     background-color: $header-topbar-bg;
 
+    .col {
+      padding: 0 10px;
+    }
+
     ul {
       list-style: none;
       margin: 0;
