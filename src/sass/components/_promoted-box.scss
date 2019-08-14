@@ -48,7 +48,16 @@
   }
 
   .product-box {
+    width: 100%;
     margin: 0;
+
+    &.carousel-cell {
+      display: none;
+    }
+
+    &.is-selected {
+      display: block;
+    }
 
     .photo {
       justify-content: center;
@@ -88,6 +97,14 @@
             font-size: 12px;
           }
         }
+      }
+    }
+  }
+
+  @for $i from 1 through 4 {
+    .product-box:nth-child(#{$i}) {
+      .photo {
+        background-image: url("../images/pictures/ch_#{$i}.jpg");
       }
     }
   }
