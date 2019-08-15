@@ -88,4 +88,5 @@ let product = [
       "Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready."
   }
 ];
+
 module.exports = product;
