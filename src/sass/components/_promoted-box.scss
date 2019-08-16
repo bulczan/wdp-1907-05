@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .box {
   margin: 0;
 
@@ -47,16 +51,16 @@
     }
   }
 
+  .promoted-box-carousel {
+    overflow: hidden;
+  }
+
   .product-box {
-    width: 100%;
     margin: 0;
+    display: block;
 
     &.carousel-cell {
-      display: none;
-    }
-
-    &.is-selected {
-      display: block;
+      width: 100%;
     }
 
     .photo {
