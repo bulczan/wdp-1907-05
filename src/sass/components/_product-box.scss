@@ -55,6 +55,14 @@
         &.full {
           @extend .fas;
         }
+        &.hover {
+          @extend .fas;
+          color: $primary;
+        }
+        &.rated {
+          @extend .fas;
+          color: $primary;
+        }
       }
     }
   }
