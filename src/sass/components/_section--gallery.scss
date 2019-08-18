@@ -211,12 +211,12 @@
 
       .gallery-product,
       .btn-main-brands-switch {
-        height: 70px;
-        width: auto;
-        max-width: 70px;
         order: 1;
         flex: 0 1 auto;
         align-self: center;
+        width: auto;
+        max-width: 70px;
+        height: 70px;
 
         img {
           width: auto;
