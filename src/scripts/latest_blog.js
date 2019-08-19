@@ -1,7 +1,7 @@
 const Flickity = require('flickity');
 
 var blogCarousel = document.querySelector('.blog-carousel');
-var flktyblog = new Flickity(blogCarousel, {
+var flickityBlog = new Flickity(blogCarousel, {
   // options
   contain: true,
   pageDots: false,
@@ -17,7 +17,7 @@ let blogCell = document.getElementsByClassName('blog-cell');
 for (let i = 0; i < blogDots.length; i++) {
   blogDots[i].addEventListener('click', function (event) {
     event.preventDefault();
-    flktyblog.selectCell(blogCell[i]);
+    flickityBlog.selectCell(blogCell[i]);
     this.classList.add('active');
     for (var j = 0; j < blogDots.length; j++) {
       if (blogDots[j].classList.contains('active') && blogDots[j] !== this) {
@@ -27,7 +27,7 @@ for (let i = 0; i < blogDots.length; i++) {
   });
 }
 
-flktyblog.on('change', function (index) {
+flickityBlog.on('change', function (index) {
   blogDots[index].classList.add('active');
   for (var j = 0; j < blogDots.length; j++) {
     if (blogDots[j].classList.contains('active') && blogDots[j] !== blogDots[index]) {
@@ -38,12 +38,12 @@ flktyblog.on('change', function (index) {
 
 let previousButton = document.getElementById('button-blog-previous');
 previousButton.addEventListener('click', function () {
-  flktyblog.previous();
+  flickityBlog.previous();
 });
 
 let nextButton = document.getElementById('button-blog-next');
 nextButton.addEventListener('click', function () {
-  flktyblog.next();
+  flickityBlog.next();
 });
 
-module.exports = flktyblog;
+module.exports = flickityBlog;
