@@ -1,6 +1,6 @@
 import toggleMainMenu from './header.js';
 import './product_score.js';
-import flktyblog from './latest_blog.js';
+import flickityBlog from './latest_blog.js';
 
 toggleMainMenu();
-flktyblog();
+flickityBlog();
