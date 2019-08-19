@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .box {
   margin: 0;
 
@@ -47,8 +51,17 @@
     }
   }
 
+  .promoted-box-carousel {
+    overflow: hidden;
+  }
+
   .product-box {
     margin: 0;
+    display: block;
+
+    &.carousel-cell {
+      width: 100%;
+    }
 
     .photo {
       justify-content: center;
@@ -88,6 +101,14 @@
             font-size: 12px;
           }
         }
+      }
+    }
+  }
+
+  @for $i from 1 through 4 {
+    .product-box:nth-child(#{$i}) {
+      .photo {
+        background-image: url("../images/pictures/ch_#{$i}.jpg");
       }
     }
   }
