@@ -80,6 +80,13 @@
     }
 
     .menu-bar {
+      .container {
+        .row {
+          .menu {
+            top: 114px;
+          }
+        }
+      }
       .col-xs-10 {
         flex: 0 0 83.3333333333%;
         max-width: 83.3333333333%;
@@ -96,8 +103,8 @@
       }
 
       .search-form {
-        display: block;
         height: auto;
+        flex-direction: column;
 
         .category {
           border-right: 0;
@@ -109,16 +116,25 @@
         }
 
         .search-field {
-          padding: 3px 0;
+          padding: 9px 10px;
+
+          input {
+            padding: 0;
+          }
+
+          button {
+            padding-right: 0;
+          }
         }
       }
 
       .mobile-menu-trigger {
         flex-grow: 0;
-      }
+        padding-left: 0;
 
-      .menu {
-        top: 86px;
+        .mobile-menu-trigger-button {
+          min-width: 44px;
+        }
       }
     }
   }
@@ -157,6 +173,17 @@
         padding: 0 10px;
       }
     }
+
+    .menu-bar {
+      .row > div:first-child {
+        padding-right: 0;
+      }
+      .search-form {
+        .categories-placeholder {
+          min-width: 110px;
+        }
+      }
+    }
   }
 }
 
@@ -173,6 +200,10 @@
       .menu ul {
         width: 100%;
         justify-content: space-between;
+      }
+
+      .categories-placeholder {
+        min-width: 110px;
       }
 
       .search-form {
@@ -195,8 +226,12 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
   header {
     .menu-bar {
+      .category {
+        width: 50%;
+      }
+
       .search-field input {
-        max-width: 173px;
+        width: 100%;
       }
 
       .menu {
@@ -212,6 +247,25 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  header {
+    .menu-bar {
+      .search-form {
+        width: 100%;
+
+        .category {
+          width: 50%;
+        }
+
+        .search-field {
+          width: 50%;
+
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Custom footer breakpoint
@@ -276,10 +330,6 @@
       .container > .row {
         height: auto;
         position: relative;
-
-        & div:first-child {
-          padding-right: 0;
-        }
 
         .mobile-menu-trigger {
           display: flex;
