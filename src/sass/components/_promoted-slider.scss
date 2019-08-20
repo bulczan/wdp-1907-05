@@ -44,7 +44,7 @@
 
         .container {
           position: absolute;
-          top: 40%;
+          top: 33%;
           padding: 0;
           margin: 0;
           text-align: center;
@@ -109,6 +109,38 @@
         &:hover {
           background-color: $primary;
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .box {
+    .promoted-slider-carousel {
+      .flickity-viewport {
+        .jumbotron {
+          .container {
+            .promoted-jumbo-slogan {
+              padding: 40px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .box {
+    .promoted-slider-carousel {
+      .flickity-viewport {
+        .jumbotron {
+          .container {
+            .promoted-jumbo-slogan {
+              padding: 40px 0;
+            }
+          }
         }
       }
     }
