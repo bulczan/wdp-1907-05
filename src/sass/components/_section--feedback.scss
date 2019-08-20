@@ -6,6 +6,10 @@
   text-align: center;
   margin: 0 80px 60px 100px;
 
+  &.feedback-carousel {
+    overflow: hidden;
+  }
+
   .visible {
     p {
       font-size: 14px;
@@ -24,6 +28,10 @@
   }
 
   .feedback-slide {
+    &.carousel-cell {
+      width: 100%;
+    }
+
     .client {
       align-items: center;
       justify-content: center;
