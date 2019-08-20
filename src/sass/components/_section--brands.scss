@@ -33,7 +33,7 @@
     }
 
     .logo-container {
-      margin: 20px 0;
+      margin: 20px 10px;
       width: 140px;
       height: 90px;
       text-align: center;
@@ -43,6 +43,21 @@
 
       img {
         padding: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .section--brands {
+    .brands-container {
+      .flickity-viewport {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .logo-container {
+        margin: 20px 20px;
       }
     }
   }
