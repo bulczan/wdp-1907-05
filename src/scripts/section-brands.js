@@ -6,6 +6,7 @@ var flickityBrands = new Flickity(brandsCarousel, {
   groupCells: true,
   pageDots: false,
   cellAlign: 'center',
+  wrapAround: true,
   cellSelector: '.carousel-cell',
   draggable: true,
   prevNextButtons: false
