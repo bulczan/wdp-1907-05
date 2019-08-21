@@ -2,7 +2,7 @@
 
 ## Opis projektu
 
-DO UZUPEŁNIENIA
+Przykładowa strona sklepu internetowego "Bazar Online Shopping", opracowana na podstawie darmowego szablonu graficznego. Projekt realizowano w grupie kursantów, którzy uczestniczą w 9-miesięcznym kursie programowania Kodilla.
 
 ## Demo
 
@@ -34,4 +34,15 @@ dla plików, które zostały wybrane do za-commit'owania.
 
 ## Konwencje i dobre praktyki
 
-DO UZUPEŁNIENIA
+- RWD ustalono następujące punkty w media queries:
+  - extra small `@media (max-width: 575.98px)`
+  - small `@media (min-width: 576px) and (max-width: 767.98px)`
+  - medium `@media (min-width: 768px) and (max-width: 991.98px)`
+  - large `@media (min-width: 992px) and (max-width: 1199.98px)`
+  - extra large `@media (min-width: 1200px)`
+- tytułu branchy zgodne z nazwami tasków w Jirze
+- tytuły commitów powinny zawierać nazwy tasków
+- wykorzystano bibliotekę Mustache.js
+  - generowanie kart produktów
+  - generowanie wpisów na blogu
+  - możliwe dalsze wykorzystanie mustache przy innych sekcjach strony
